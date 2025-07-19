@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalles del Contacto</title>
+  <link rel="stylesheet" href="../assets/css/detallesContacto.css">
+</head>
+<body>
+  <div class="details-container">
+    <h2>Detalles del Contacto</h2>
+    <div id="contactDetails">
+      <p><strong>Nombre:</strong> <span id="contactName"></span></p>
+      <p><strong>Email:</strong> <span id="contactEmail"></span></p>
+      <p><strong>Teléfono:</strong> <span id="contactPhone"></span></p>
+    </div>
+    
+    <div class="return-button">
+      <a href="contactos.html">
+        <button>Regresar</button>
+      </a>
+    </div>
+    
+    <div class="button-group" style="display: flex; gap: 10px; margin-top: 20px; justify-content: center;">
+      <a href="agregarContacto.html">
+        <button>Nuevo Contacto</button>
+      </a>
+      <a href="contactoFavoritos.html">
+        <button>Ver Favoritos</button>
+      </a>
+      <a href="listaDeTareas.html">
+        <button>Lista de Tareas</button>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const contactName = urlParams.get('nombre');
+    const contactEmail = urlParams.get('correo');
+    const contactPhone = urlParams.get('telefono');
+
+    document.getElementById('contactName').textContent = contactName;
+    document.getElementById('contactEmail').textContent = contactEmail;
+    document.getElementById('contactPhone').textContent = contactPhone;
+  </script>
+</body>
+</html>

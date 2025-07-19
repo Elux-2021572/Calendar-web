@@ -1,0 +1,224 @@
+/* Importar la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Fuente principal */
+    background-image: url("../img/fondoTareas.jpg");
+    /* Fondo personalizado */
+    display: flex;
+    /* Centrar contenido */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Tamaño de la ventana completa */
+    margin: 0;
+    background-size: cover;
+    /* Asegurar que el fondo cubra toda el área */
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #F2E1C2;
+    /* Color principal del texto */
+}
+
+/* Contenedor principal para las tareas */
+.todo-container {
+    background-color: rgba(17, 42, 61, 0.8);
+    /* Fondo oscuro con transparencia */
+    padding: 50px;
+    border-radius: 10px;
+    /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    /* Sombra para dar profundidad */
+    width: 400px;
+    /* Ancho del contenedor */
+    color: #F2E1C2;
+    /* Color del texto */
+    text-align: center;
+    /* Centrar texto */
+}
+
+/* Estilos para el campo de entrada de texto */
+input[type="text"] {
+    width: 80%;
+    /* Ancho relativo del input */
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #1E90FF;
+    /* Borde inicial azul claro */
+    border-radius: 10px;
+    outline: none;
+    /* Quitar contorno al seleccionar */
+    transition: border-color 0.3s ease;
+    /* Transición al cambiar de color */
+    background-color: #ffffff;
+    color: #112A3D;
+    /* Texto oscuro */
+}
+
+input[type="text"]:focus {
+    border-color: #F27405;
+    /* Cambiar color de borde al enfocarse */
+}
+
+/* Estilos generales para los botones */
+button {
+    padding: 12px 20px;
+    /* Tamaño y espacio interno */
+    background-color: #f20505;
+    /* Color inicial del botón */
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambiar a ícono de mano al pasar el mouse */
+    font-weight: bold;
+    /* Texto en negrita */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    /* Transición en el color de fondo */
+}
+
+button:hover {
+    background-color: #F27405;
+    /* Cambiar color al pasar el mouse */
+}
+
+button:focus {
+    outline: 2px solid #F20505;
+    /* Resaltar el botón al seleccionarlo */
+}
+
+/* Botón específico para agregar tareas */
+.boton-agregar {
+    background-color: #F20505;
+    color: #ffffff;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-agregar:hover {
+    background-color: #F29F05;
+}
+
+/* Botón específico para regresar */
+.boton-regresar {
+    background-color: #1E90FF;
+    color: #F2E1C2;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    /* Asegurar que no aparezca subrayado */
+}
+
+.boton-regresar:hover {
+    background-color: #F29F05;
+}
+
+/* Contenedor para organizar los botones */
+.botones {
+    display: flex;
+    justify-content: center;
+    /* Centrados horizontalmente */
+    gap: 20px;
+    /* Espaciado entre botones */
+    margin-top: 20px;
+}
+
+/* Lista de tareas */
+ul {
+    list-style: none;
+    /* Quitar viñetas */
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #F2E1C2;
+    /* Separador entre tareas */
+    padding: 10px 0;
+    color: #F2E1C2;
+}
+
+/* Botones dentro de las tareas */
+li button {
+    background-color: #F20505;
+    color: #fbfbfb;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+li button:hover {
+    opacity: 0.8;
+    /* Transparencia al pasar el mouse */
+}
+
+li button:focus {
+    outline: 2px dashed #F29F05;
+}
+
+/* Estilo para tareas completadas */
+li.completed span {
+    text-decoration: line-through;
+    /* Texto tachado */
+    color: gray;
+    /* Color atenuado */
+}
+
+li.completed button {
+    display: none;
+    /* Ocultar botón en tareas completadas */
+}
+
+/* Adaptaciones para pantallas grandes */
+@media (min-width: 1024px) {
+    .todo-container {
+        width: 500px;
+        /* Ancho mayor */
+        padding: 60px;
+    }
+
+    input[type="text"] {
+        font-size: 18px;
+        padding: 16px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 16px;
+    }
+}
+
+/* Adaptaciones para pantallas pequeñas */
+@media (max-width: 600px) {
+    .todo-container {
+        width: 90%;
+        /* Asegurar un tamaño adecuado en móviles */
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    input[type="text"] {
+        width: 90%;
+        /* Ajustar el ancho del input */
+    }
+
+    button {
+        font-size: 14px;
+        /* Reducir tamaño de los botones */
+    }
+}

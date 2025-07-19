@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/agregarContacto.css">
+    <title>Agregar contacto</title>
+</head>
+<body>
+    <div class="formulario">
+        <h1>Nuevo contacto</h1>
+        <form>
+            <!-- Campos para ingresar los datos del nuevo contacto -->
+            <input type="text" id="addName" placeholder="Nombre" class="input">
+            <input type="email" id="addEmail" placeholder="Email" class="input">
+            <input type="tel" id="addPhone" placeholder="Teléfono" class="input">
+            
+            <!-- Botón que llama a la función para guardar el contacto -->
+            <button type="button" id="botonAgregar" class="boton" onclick="saveNewContact()">Agregar</button>
+            <br><br>
+        </form>
+
+        <!-- Botón para regresar a la lista de contactos -->
+        <div class="botones">
+            <a href="contactos.html" class="botones-agenda">Regresar</a>
+        </div>
+    </div>
+
+    <!-- Script que contiene la lógica para agregar contactos -->
+    <script src="../assets/js/agregarContacto.js"></script>
+</body>
+</html>

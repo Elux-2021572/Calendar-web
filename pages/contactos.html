@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/agendaPestanas.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/paginaContacto2.css">
+    <title>Contactos</title>
+</head>
+
+<body>
+    <div class="user-button">
+        <a href="mostrarPerfil.html" class="user-profile">
+            <img src="../assets/img/usuario.png" alt="Usuario" class="user-image">
+            <button>Usuario</button>
+        </a>
+    </div>
+
+    <div class="contact-container">
+        <h2>Lista de Contactos</h2>
+
+        <div id="contactListContainer">
+            <table id="contactList">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                        <th>Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="button-group" style="display: flex; gap: 10px; margin-top: 20px; justify-content: center;">
+            <a href="agregarContacto.html">
+                <button>Nuevo Contacto</button>
+            </a>
+            <a href="contactoFavoritos.html">
+                <button>Ver Favoritos</button>
+            </a>
+            <a href="listaDeTareas.html">
+                <button>Lista de Tareas</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="../assets/js/botonesLista.js"></script>
+    <script src="../assets/js/contactodetalle.js"></script>
+    <script src="../assets/js/mostrarContactos.js"></script>
+</body>
+
+</html>

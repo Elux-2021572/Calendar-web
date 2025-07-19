@@ -1,0 +1,106 @@
+/* Importar fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../img/fondoFavoritos.jpg");
+    /* Fondo con imagen personalizada */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Contenedor principal de la lista de favoritos */
+.lista {
+    background-color: rgba(17, 42, 61, 0.8);
+    /* Fondo oscuro con transparencia */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    /* Sombra para dar profundidad */
+    text-align: center;
+    width: 600px;
+    color: #F2E1C2;
+    /* Texto dorado claro */
+}
+
+/* Título de la lista */
+.lista h2 {
+    font-size: 24px;
+    color: #A7D8FF;
+    /* Azul claro */
+    margin-bottom: 20px;
+}
+
+/* Tabla que muestra los contactos */
+.tabla-contactos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 2px solid #A7D8FF;
+    /* Borde azul claro */
+    border-radius: 8px;
+    overflow: hidden;
+    /* Para evitar desbordes visuales */
+}
+
+/* Encabezados de la tabla */
+.tabla-contactos thead {
+    background-color: #3498db;
+    /* Fondo azul */
+    color: white;
+    /* Texto blanco */
+}
+
+/* Celdas de la tabla */
+.tabla-contactos th,
+.tabla-contactos td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Borde claro y sutil */
+}
+
+/* Estilo alternativo para filas pares */
+.tabla-contactos tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Fondo más claro */
+}
+
+/* Cambio de fondo al pasar el cursor */
+.tabla-contactos tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Fondo más claro al pasar */
+}
+
+/* Botones generales */
+.botones a {
+    text-decoration: none;
+    /* Eliminar subrayado */
+}
+
+/* Estilo de los botones de acción */
+.botones-agenda {
+    display: inline-block;
+    background-color: #f20505;
+    /* Rojo */
+    color: #ffffff;
+    /* Texto blanco */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    /* Suavizar cambios de color */
+}
+
+/* Efecto hover para los botones */
+.botones-agenda:hover {
+    background-color: #F27405;
+    /* Naranja más intenso */
+}

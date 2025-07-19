@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../assets/img/agendaPestanas.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/listaTareas.css">
+    <title>Lista de tareas</title>
+</head>
+<body class="todo-page">
+
+
+    <main class="todo-container">
+        <section>
+            <h2>Tareas</h2>
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="Añadir nueva tarea..." 
+                aria-label="Escribe tu nueva tarea aquí"
+            >
+            <div class="align-button">
+                <button class="button-one" id="addTaskButton" aria-label="Agregar tarea">Agregar tarea</button>
+            </div>
+            
+            <ul id="taskList" aria-live="polite" aria-relevant="additions">
+            </ul>
+
+            <div class="botones">
+                <a href="contactos.html" class="boton-regresar" id="boton">Regresar</a>
+            </div>
+                    
+        </section>
+    </main>
+
+    <script src="../assets/js/adminTarea.js" defer></script>
+    
+</body>
+</html>

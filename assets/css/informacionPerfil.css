@@ -1,0 +1,105 @@
+/* Importar la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../img/fondoPerfil.jpg");
+    /* Imagen de fondo personalizada */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita la repetición de la imagen */
+}
+
+/* Contenedor principal del perfil */
+.profile-container {
+    background-color: rgba(17, 42, 61, 0.9);
+    /* Fondo oscuro con transparencia */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    /* Sombra para resaltar el contenedor */
+    width: 350px;
+    text-align: center;
+    color: #F2E1C2;
+    /* Texto dorado claro */
+}
+
+/* Título del perfil */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #A7D8FF;
+    /* Azul claro */
+}
+
+/* Detalles del perfil */
+.profile-details {
+    text-align: left;
+    /* Alinear detalles a la izquierda */
+    margin-bottom: 30px;
+}
+
+.profile-details p {
+    margin: 10px 0;
+    color: #F2E1C2;
+    /* Texto dorado claro */
+    font-size: 16px;
+}
+
+/* Contenedor de botones */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    /* Separar botones */
+    gap: 10px;
+    /* Espacio entre botones */
+}
+
+/* Botón de regresar */
+.back-btn {
+    text-decoration: none;
+    /* Eliminar subrayado */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    background-color: #3498db;
+    /* Azul */
+    transition: background-color 0.3s ease;
+    /* Transición suave al cambiar color */
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #2980b9;
+    /* Azul más oscuro al pasar el cursor */
+}
+
+/* Botón de cerrar sesión */
+.logout-btn {
+    text-decoration: none;
+    /* Eliminar subrayado */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    background-color: #f20505;
+    /* Rojo */
+    transition: background-color 0.3s ease;
+    /* Transición suave al cambiar color */
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #F27405;
+    /* Naranja más intenso al pasar el cursor */
+}

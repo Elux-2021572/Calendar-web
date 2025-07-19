@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/agendaPestanas.png" type="image/x-icon">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" href="../assets/css/informacionPerfil.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h2>Mi Perfil</h2>
+        <div class="profile-details">
+            <p><strong>Nombre de Usuario:</strong> <span id="nombreUsuario">Cargando...</span></p>
+            <p><strong>Email:</strong> <span id="correoUsuario">Cargando...</span></p>
+        </div>
+        <div class="buttons">
+            <button class="back-btn" id="regresarButton">Regresar</button>
+            <button class="logout-btn" id="logoutButton">Cerrar sesión</button>
+        </div>
+    </div>
+
+    <script>
+        // Recuperar el usuario autenticado desde localStorage
+        const usuarioActivo = JSON.parse(localStorage.getItem("usuarioActivo"));
+
+        if (usuarioActivo) {
+            // Mostrar los datos del usuario en los elementos correspondientes
+            document.getElementById("nombreUsuario").textContent = usuarioActivo.nombre || "Sin nombre";
+            document.getElementById("correoUsuario").textContent = usuarioActivo.correoValido || "Correo no disponible";
+        } else {
+            // Si no hay un usuario autenticado, redirigir al inicio de sesión
+            alert("No has iniciado sesión.");
+            window.location.href = "../index.html";
+        }
+
+        // Función para el botón "Regresar"
+        document.getElementById("regresarButton").addEventListener("click", () => {
+            window.location.href = "./contactos.html"; // Redirigir a contactos.html
+        });
+
+        // Función para el botón "Cerrar sesión"
+        document.getElementById("logoutButton").addEventListener("click", () => {
+            localStorage.removeItem("usuarioActivo"); // Eliminar los datos del usuario
+            alert("Sesión cerrada.");
+            window.location.href = "../index.html"; // Redirigir al inicio de sesión
+        });
+    </script>
+</body>
+</html>

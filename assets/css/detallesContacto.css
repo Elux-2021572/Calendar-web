@@ -1,0 +1,147 @@
+/* Paleta de colores global para el diseño */
+:root {
+    --primary-color: #4a90e2;
+    /* Azul principal utilizado para elementos destacados */
+    --secondary-color: #f5f7fa;
+    /* Gris claro usado en fondos secundarios */
+    --accent-color: #f7c948;
+    /* Amarillo para botones y elementos llamativos */
+    --text-color: #ffffff;
+    /* Color del texto principal */
+    --background-color: #ffffff;
+    /* Color de fondo principal */
+    --button-hover: #357ABD;
+    /* Color del botón al pasar el cursor */
+}
+
+/* Reset de márgenes y estilo general del cuerpo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    /* Tipografía principal */
+    background: url('../img/fondoLogin.jpg') no-repeat center center fixed;
+    /* Imagen de fondo */
+    background-size: cover;
+    /* Ajusta la imagen al tamaño de la pantalla */
+    color: var(--text-color);
+    line-height: 1.6;
+    /* Espaciado entre líneas para mejorar legibilidad */
+}
+
+/* Estilo del contenedor principal */
+.details-container {
+    max-width: 800px;
+    /* Ancho máximo para evitar que ocupe toda la pantalla */
+    margin: 40px auto;
+    /* Centrado vertical y horizontal */
+    padding: 20px;
+    /* Espaciado interno */
+    background-color: rgba(17, 42, 61, 0.8);
+    /* Fondo semitransparente para destacar el contenido */
+    border-radius: 12px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra para dar profundidad */
+}
+
+/* Estilo de los encabezados dentro del contenedor */
+.details-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    /* Separación inferior */
+    color: var(--primary-color);
+    /* Color destacado */
+    text-align: center;
+    /* Centrado del texto */
+}
+
+/* Estilo de los detalles de contacto */
+#contactDetails p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+#contactDetails strong {
+    color: var(--primary-color);
+    /* Resaltar texto importante */
+}
+
+/* Estilo del botón de regreso */
+.return-button {
+    display: flex;
+    justify-content: center;
+    /* Centra el botón horizontalmente */
+    margin: 20px 0;
+    /* Espaciado superior e inferior */
+}
+
+.return-button button {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px 20px;
+    /* Tamaño del botón */
+    border: none;
+    border-radius: 8px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    /* Suaviza el cambio de color al interactuar */
+}
+
+.return-button button:hover {
+    background-color: var(--button-hover);
+    /* Color de fondo al pasar el cursor */
+}
+
+/* Estilo del grupo de botones de acción */
+.button-group {
+    display: flex;
+    justify-content: center;
+    /* Centrado de los botones */
+    gap: 15px;
+    /* Separación entre botones */
+    margin-top: 20px;
+}
+
+.button-group a button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Animación en hover */
+}
+
+.button-group a button:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    transform: translateY(-2px);
+    /* Efecto de movimiento al pasar el cursor */
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 600px) {
+    .details-container {
+        padding: 15px;
+        /* Reduce el padding en pantallas pequeñas */
+    }
+
+    #contactDetails p {
+        font-size: 1rem;
+        /* Texto más pequeño en pantallas pequeñas */
+    }
+
+    .button-group a button,
+    .return-button button {
+        font-size: 0.9rem;
+        /* Ajusta el tamaño de los botones */
+        padding: 8px 16px;
+        /* Reduce el tamaño del botón */
+    }
+}

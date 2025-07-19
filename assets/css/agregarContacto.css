@@ -1,0 +1,144 @@
+/* Importar la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilo general del cuerpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../img/fondoNuevoContacto.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Contenedor del formulario */
+.formulario {
+    background-color: rgba(17, 42, 61, 0.8);
+    /* Fondo oscuro con transparencia */
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    /* Sombra ligera para destacar */
+    text-align: center;
+    width: 350px;
+    color: #F2E1C2;
+    /* Texto en dorado claro */
+}
+
+/* Estilo del título principal */
+.formulario h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    /* Título en blanco */
+}
+
+/* Estilo del subtítulo */
+.formulario h2 {
+    font-size: 18px;
+    color: #A7D8FF;
+    /* Azul claro */
+    margin-bottom: 20px;
+}
+
+/* Campos de entrada del formulario */
+.input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #A7D8FF;
+    /* Borde azul claro */
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    /* Efecto de cambio de borde */
+    background-color: #ffffff;
+    /* Fondo blanco */
+    color: #112A3D;
+    /* Texto oscuro */
+}
+
+/* Efecto al seleccionar un campo */
+.input:focus {
+    border-color: #F27405;
+    /* Borde naranja al enfocarse */
+}
+
+/* Botón principal */
+.boton {
+    width: 100%;
+    padding: 12px;
+    background-color: #f20505;
+    /* Rojo */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Efecto al pasar el cursor */
+}
+
+.boton:hover {
+    background-color: #F29F05;
+    /* Naranja más intenso */
+}
+
+/* Estilo de botones adicionales */
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Botones para acciones adicionales */
+.botones-agenda {
+    padding: 10px;
+    background-color: #3498db;
+    /* Azul claro */
+    color: #F2E1C2;
+    /* Texto en dorado claro */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botones-agenda:hover {
+    background-color: #F27405;
+    /* Naranja */
+}
+
+/* Ajustes responsivos para pantallas grandes */
+@media (min-width: 1024px) {
+    .formulario {
+        width: 450px;
+        padding: 50px;
+    }
+
+    .input {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    .boton,
+    .botones-agenda {
+        font-size: 18px;
+        padding: 14px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .formulario {
+        width: 550px;
+    }
+}
