@@ -83,11 +83,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Made with ❤️ by Elux-2021572
 ```
-
-## Project Description
-
-Calendar Web is a front-end focused calendar application designed to help users manage their time and events efficiently. The project emphasizes a clean, intuitive user interface with responsive design principles that ensure a consistent experience across all devices.
-
-The application leverages CSS for styling (55% of the codebase), HTML for structure (26.3%), and JavaScript for interactive functionality (18.7%). This distribution highlights the project's focus on visual presentation and user experience, while maintaining the necessary functionality through JavaScript.
-
-Users can navigate through different time periods, add and manage events, and customize their calendar view according to their preferences. The application is designed to be lightweight, fast, and easy to use, making it an excellent tool for personal scheduling and time management.
